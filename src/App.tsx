@@ -1,24 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import NavBar from "./components/NavBar";
+import Header from "./components/Header";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
+import Contacts from "./components/Contacts";
+import "./main.scss";
 
 function App() {
+  const [theme, setTheme] = useState("light");
+
+  const changeTheme = () => {
+    console.log("===test===");
+    if (theme === "light") {
+      setTheme("dark");
+      return;
+    }
+    setTheme("light");
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" data-theme={theme}>
+      <NavBar changeTheme={changeTheme} theme={theme} />
+      <Header />
+      <Experience />
+      <Projects />
+      <Contacts />
     </div>
   );
 }

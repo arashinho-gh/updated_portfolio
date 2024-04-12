@@ -1,0 +1,31 @@
+@import "./styles/navBar.scss";
+
+:root {
+  // Default to light theme variables
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --button-bg-color: #007bff;
+  --button-text-color: #ffffff;
+  --header-bg-color: #f4f4f4;
+  --header-text-color: #333333;
+}
+
+[data-theme="dark"] {
+  // Dark theme variables
+  --background-color: #111111;
+  --text-color: #ffffff;
+  --button-bg-color: #5865f2;
+  --button-text-color: #ffffff;
+  --header-bg-color: #222222;
+  --header-text-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+.App {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
