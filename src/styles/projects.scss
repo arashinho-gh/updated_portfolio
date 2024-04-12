@@ -1,8 +1,7 @@
 .projects {
   width: 100%;
-  border-bottom: 1px solid white;
-  padding-bottom: 80px;
-  margin-bottom: 80px;
+  border-bottom: 1px solid var(--text-color);
+  padding: 80px 0px;
   &-title {
     width: 100%;
     display: flex;
@@ -72,6 +71,7 @@
 
     &-skills {
       color: #6cace4;
+      font-weight: 500;
     }
   }
 }
