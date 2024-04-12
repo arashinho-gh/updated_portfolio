@@ -7,7 +7,7 @@ import Contacts from "./components/Contacts";
 import "./main.scss";
 
 function App() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
 
   const changeTheme = () => {
     console.log("===test===");

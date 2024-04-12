@@ -7,6 +7,14 @@ const Projects = () => {
 
 Projects.constants = {
   baseClassName: "projects",
+  projects: [
+    {
+      title: "Full Stack Developer (Hybrid)",
+      date: "Sep 2023 - Current",
+      location: "Mississauga",
+      descriptions: ["a", "b", "c"],
+    },
+  ],
 };
 
 export default Projects;
