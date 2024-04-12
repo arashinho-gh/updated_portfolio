@@ -59,9 +59,10 @@ Experience.constants = {
       date: "Sep 2023 - Current",
       location: "Hamilton - Canada",
       descriptions: [
-        "Currently contributing both to the Front‑end and Back-end aspect of a Microservice Architecture application and managing it’s API gateways by using the Spring Framework, TypeScript, SQL, and NoSQL databases.",
-        "The front-end aspect required delivery to three other teams, by using technologies in React and Redux which required modification, debugging and feature addition to the novel and legacy systems.",
-        "Working on the modernization of a legacy system in an Agile environment by contributing to eight different repositories and communicating with the DevOps team to ensure the delivery of all the products, which has led to 100+ commit contributions over the past 4 months.",
+        "Currently founding a start up AI application that provides students and instructors with tools to access their course materials in an easier way and instructors to have a better insight on the students.",
+        "Worked as the lead front-end developer in the team while also implementing an AI service in python that interacts with a gateway service,vector DB in pinecone and an RDMS developed in PostgreSQL.",
+        "Contributed to the deployment of our microfront end front-end services by using AWS technologies in ECS, S3, and gateway.",
+        "Tested out our application with 120+ students so far and have received 90% positive feedback on the performance of our application.",
       ],
     },
   ],

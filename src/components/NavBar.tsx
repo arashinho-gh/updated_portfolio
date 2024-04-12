@@ -18,6 +18,10 @@ const NavBar = (props: NavBarProps) => {
     }
   };
 
+  const handleReRoute = (url: string) => {
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <div className={baseClassName}>
       <div className={`${baseClassName}-init`}>AG</div>
@@ -29,7 +33,15 @@ const NavBar = (props: NavBarProps) => {
         >
           Projects
         </Button>
-        <Button variant="text" className={`${baseClassName}-links-button`}>
+        <Button
+          variant="text"
+          className={`${baseClassName}-links-button`}
+          onClick={() =>
+            handleReRoute(
+              "https://drive.google.com/drive/folders/1ie895UHlErR5QE9kzgl6CSGTQfeNOO-i?usp=drive_link"
+            )
+          }
+        >
           Resume
         </Button>
         <Button
