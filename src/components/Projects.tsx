@@ -52,44 +52,52 @@ Projects.constants = {
   baseClassName: "projects",
   projects: [
     {
-      title: "Project Example",
+      title: "Personal Portfolio",
       description:
         "Proxy provider website including authentication, dashboard and dynamic features.",
       github_url: "https://github.com/example",
       img: "1",
-      skills: ["React", "Node.js", "CSS"],
+      skills: ["TypeScript", "React", "Node.js", "CSS"],
     },
     {
-      title: "Project Example",
+      title: "Personal Portfolio 2",
       description:
         "Proxy provider website including authentication, dashboard and dynamic features.",
       github_url: "https://github.com/example",
       img: "2",
-      skills: ["React", "Node.js", "CSS"],
+      skills: ["JavaScript", "React", "Node.js", "CSS"],
     },
     {
-      title: "Project Example",
+      title: "Carpooling Mobile App",
       description:
         "Proxy provider website including authentication, dashboard and dynamic features.",
       github_url: "https://github.com/example",
       img: "3",
-      skills: ["React", "Node.js", "CSS"],
+      skills: ["JavaScript", "Express", "MongoDB", "Node.js"],
     },
     {
-      title: "Project Example",
+      title: "Train Station Stimulator",
       description:
         "Proxy provider website including authentication, dashboard and dynamic features.",
       github_url: "https://github.com/example",
       img: "4",
-      skills: ["React", "Node.js", "CSS"],
+      skills: ["Python", "Algorithms & Data Structures"],
     },
     {
-      title: "Project Example",
+      title: "Assembly Translator",
       description:
         "Proxy provider website including authentication, dashboard and dynamic features.",
       github_url: "https://github.com/example",
       img: "5",
-      skills: ["React", "Node.js", "CSS"],
+      skills: ["Python", "Algorithms & Data Structures"],
+    },
+    {
+      title: "Shoe Plugin",
+      description:
+        "Proxy provider website including authentication, dashboard and dynamic features.",
+      github_url: "https://github.com/example",
+      img: "6",
+      skills: ["JavaScript", "React", "CSS"],
     },
   ],
 };
