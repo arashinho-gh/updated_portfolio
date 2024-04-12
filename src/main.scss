@@ -1,4 +1,5 @@
 @import "./styles/navBar.scss";
+@import "./styles/header.scss";
 
 :root {
   // Default to light theme variables
@@ -28,4 +29,14 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   transition: background-color 0.3s, color 0.3s;
+  width: calc(100% - 10%);
+  display: flex;
+  padding: 0px 5%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 500px) {
+    width: calc(100% - 20%);
+    padding: 0px 10%;
+  }
 }

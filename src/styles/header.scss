@@ -1,0 +1,33 @@
+.header {
+  font-size: 16px;
+  margin: 120px 0px;
+
+  &-title {
+    background: rgb(152, 69, 232);
+    font-size: 96px;
+    font-weight: 600;
+    background: linear-gradient(
+      90deg,
+      rgba(152, 69, 232, 1) 0%,
+      rgba(51, 210, 255, 1) 56%,
+      rgba(221, 87, 137, 1) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    margin: 24px 0px;
+  }
+
+  &-desc {
+    line-height: 1.5;
+  }
+
+  &-hello {
+    display: flex;
+    align-items: center;
+    margin: 61px 0px !important;
+    cursor: pointer;
+    color: var(--text-color) !important;
+  }
+}
