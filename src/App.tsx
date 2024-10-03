@@ -5,6 +5,7 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Contacts from "./components/Contacts";
 import "./main.scss";
+import GroupProjects from "./components/GroupProjects";
 
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -23,6 +24,7 @@ function App() {
       <NavBar changeTheme={changeTheme} theme={theme} />
       <Header />
       <Experience />
+      <GroupProjects />
       <Projects />
       <Contacts />
     </div>

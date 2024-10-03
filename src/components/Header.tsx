@@ -4,6 +4,13 @@ import { Button } from "@mui/material";
 const Header = () => {
   const { baseClassName, description } = Header.constants;
 
+  const scrollToElement = (elm: string) => {
+    const element = document.getElementsByClassName(elm);
+    if (element.length > 0) {
+      element[0].scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <div className={baseClassName}>
       Hey I'm
@@ -14,7 +21,11 @@ const Header = () => {
       >
         {description}
       </div>
-      <Button variant="text" className={`${baseClassName}-hello`}>
+      <Button
+        variant="text"
+        className={`${baseClassName}-hello`}
+        onClick={() => scrollToElement("contacts")}
+      >
         Say hi <EastIcon sx={{ marginLeft: "10px" }} />
       </Button>
     </div>

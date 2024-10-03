@@ -1,8 +1,8 @@
-.experience {
+.group-project {
   display: flex;
   flex-direction: row;
   width: 100%;
-  // border-bottom: 1px solid var(--text-color);
+  border-bottom: 1px solid var(--text-color);
   padding-bottom: 100px;
   @media (max-width: 1200px) {
     flex-direction: column;
