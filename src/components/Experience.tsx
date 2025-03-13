@@ -45,7 +45,17 @@ Experience.constants = {
   baseClassName: "experience",
   experiences: [
     {
-      title: "EllisDon | Full Stack Developer (Hybrid)",
+      title: "Dayforce | Software Developer Intern",
+      date: "Jan 2025 - Current",
+      location: "Toronto - Canada",
+      descriptions: [
+        "Modified core services and endpoints to resolve a critical payload threshold issue, enabling reliable handling of payloads exceeding 1000 users and significantly reducing transfer errors",
+        "Optimized internal service calls, driving a 50% improvement in data migrations by reducing latency and enhancing inter-service communication.",
+        "Reconfigured a PowerShell migration script that integrated 10 additional scripts to automate database setup and configuration, streamlining the initial project setup and enhancing overall deployment efficiency.",
+      ],
+    },
+    {
+      title: "EllisDon | Full Stack Developer Intern",
       date: "Sep 2023 - August 2024",
       location: "Mississauga - Canada",
       descriptions: [
@@ -53,20 +63,8 @@ Experience.constants = {
         "Developed a service that updates table schema and data in real-time, with the capability to export the modified data into Excel sheets, streamlining data analysis and reporting for 1,000+ subcontractors.",
         "Collaborated on the modernization of the legacy Request for Information (RFI) module, implementing new API endpoints that reduced system latency by 20% within a year.",
         "Integrated an interactive Gantt Chart within the subcontractor communication portal UI, enabling 1,000+ subcontractors to effectively visualize and manage project deadlines.",
-        "Led the front-end development of a subcontractor cost management web application, designed to integrate seamlessly with both EllisDon’s internal data and third-party company data.",
       ],
     },
-    // {
-    //   title: "Course Companion | Co-Founder & Full Stack Developer",
-    //   date: "Sep 2023 - Current",
-    //   location: "Hamilton - Canada",
-    //   descriptions: [
-    //     "Currently founding a start up AI application that provides students and instructors with tools to access their course materials in an easier way and instructors to have a better insight on the students.",
-    //     "Worked as the lead front-end developer in the team while also implementing an AI service in python that interacts with a gateway service,vector DB in pinecone and an RDMS developed in PostgreSQL.",
-    //     "Contributed to the deployment of our microfront end front-end services by using AWS technologies in ECS, S3, and gateway.",
-    //     "Tested out our application with 120+ students so far and have received 90% positive feedback on the performance of our application.",
-    //   ],
-    // },
   ],
 };
 
