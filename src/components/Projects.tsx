@@ -5,7 +5,7 @@ import { IconButton } from "@mui/material";
 interface ProjectProps {
   title: string;
   description: string;
-  github_url: string;
+  github_url?: string;
   img: string;
   skills: string[];
   link?: string;
@@ -28,15 +28,17 @@ const Projects = () => {
         <div className={`${baseClassName}-card-header`}>
           <div className={`${baseClassName}-card-title`}>{title}</div>
           <div style={{ display: "flex", justifyContent: "center" }}>
-            <IconButton
-              sx={{ fontSize: "28px" }}
-              onClick={() => openProjectLink(github_url)}
-            >
-              <GitHubIcon
-                className={`${baseClassName}-card-github`}
+            {github_url ? (
+              <IconButton
                 sx={{ fontSize: "28px" }}
-              />
-            </IconButton>
+                onClick={() => openProjectLink(github_url)}
+              >
+                <GitHubIcon
+                  className={`${baseClassName}-card-github`}
+                  sx={{ fontSize: "28px" }}
+                />
+              </IconButton>
+            ) : null}
             {link ? (
               <IconButton
                 sx={{ fontSize: "28px" }}
@@ -73,6 +75,14 @@ const Projects = () => {
 Projects.constants = {
   baseClassName: "projects",
   projects: [
+    {
+      title: "MISA Club Website",
+      description:
+        "Developed a multipage club website for the McMaster Iranian Student Association using React and AWS Lambda, featuring real-time messaging to engage 200 active members and 500+ alumni.",
+      link: "https://arashinho-gh.github.io/portfolio/",
+      img: "7",
+      skills: ["TypeScript", "React", "Lambda", "SES", "AWS"],
+    },
     {
       title: "Personal Portfolio",
       description:
@@ -121,7 +131,7 @@ Projects.constants = {
       github_url: "https://github.com/arashinho-gh/Shoe-Plugin",
       img: "6",
       skills: ["JavaScript", "React", "CSS"],
-    }
+    },
   ],
 };
 
