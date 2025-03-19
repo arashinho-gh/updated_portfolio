@@ -46,7 +46,7 @@ Experience.constants = {
   experiences: [
     {
       title: "Dayforce | Software Developer Intern",
-      date: "Jan 2025 - Current",
+      date: "January 2025 - Current",
       location: "Toronto - Canada",
       descriptions: [
         "Modified core services and endpoints to resolve a critical payload threshold issue, enabling reliable handling of payloads exceeding 1000 users and significantly reducing transfer errors",
@@ -56,7 +56,7 @@ Experience.constants = {
     },
     {
       title: "EllisDon | Full Stack Developer Intern",
-      date: "Sep 2023 - August 2024",
+      date: "September 2023 - August 2024",
       location: "Mississauga - Canada",
       descriptions: [
         "Contributed to the development of 15+ components for an internal UI library, including a widely adopted Rich Text Editor (RTE), enhancing user experience across all company products.",

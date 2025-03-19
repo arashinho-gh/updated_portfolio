@@ -46,7 +46,7 @@ GroupProjects.constants = {
   projects: [
     {
       title: "Course Companion | Co-Founder & Full Stack Developer",
-      date: "Sep 2023 - April 2024",
+      date: "September 2023 - April 2024",
       location: "Hamilton - Canada",
       descriptions: [
         "Developed a university-exclusive web application offering 24/7 student support for course-specific material.",

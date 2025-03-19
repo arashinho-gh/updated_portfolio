@@ -79,7 +79,7 @@ Projects.constants = {
       title: "MISA Club Website",
       description:
         "Developed a multipage club website for the McMaster Iranian Student Association using React and AWS Lambda, featuring real-time messaging to engage 200 active members and 500+ alumni.",
-      link: "https://arashinho-gh.github.io/portfolio/",
+      link: "https://mcmasteriranians.com/",
       img: "7",
       skills: ["TypeScript", "React", "Lambda", "SES", "AWS"],
     },
