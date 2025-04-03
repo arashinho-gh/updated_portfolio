@@ -91,15 +91,15 @@ Projects.constants = {
       img: "1",
       skills: ["TypeScript", "React", "Node.js", "CSS", "AWS"],
     },
-    {
-      title: "Personal Portfolio 2",
-      description:
-        "A personal portfolio by using frameworks in react and differnt UI libraries.",
-      github_url: "https://github.com/arashinho-gh/portfolio",
-      link: "https://arashinho-gh.github.io/portfolio/",
-      img: "2",
-      skills: ["JavaScript", "React", "Node.js", "CSS"],
-    },
+    // {
+    //   title: "Personal Portfolio 2",
+    //   description:
+    //     "A personal portfolio by using frameworks in react and differnt UI libraries.",
+    //   github_url: "https://github.com/arashinho-gh/portfolio",
+    //   link: "https://arashinho-gh.github.io/portfolio/",
+    //   img: "2",
+    //   skills: ["JavaScript", "React", "Node.js", "CSS"],
+    // },
     {
       title: "Carpooling Mobile App",
       description:

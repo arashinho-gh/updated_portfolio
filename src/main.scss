@@ -40,7 +40,7 @@ body {
   align-items: center;
   justify-content: center;
   @media (max-width: 500px) {
-    width: calc(100% - 20%);
-    padding: 0px 10%;
+    width: calc(100% - 60px);
+    padding: 0px 30px;
   }
 }
