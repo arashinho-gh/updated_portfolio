@@ -49,9 +49,10 @@ Experience.constants = {
       date: "January 2025 - Current",
       location: "Toronto - Canada",
       descriptions: [
-        "Modified core services and endpoints to resolve a critical payload threshold issue, enabling reliable handling of payloads exceeding 1000 users and significantly reducing transfer errors",
         "Optimized internal service calls, driving a 50% improvement in data migrations by reducing latency and enhancing inter-service communication.",
-        "Reconfigured a PowerShell migration script that integrated 10 additional scripts to automate database setup and configuration, streamlining the initial project setup and enhancing overall deployment efficiency.",
+        "Implemented a metadata-driven approach for migrating data into new schema, making it compatible with the Application Metadata Framework (AMF) to enhance system scalability and streamline data management.",
+        "Reconfigured the PowerShell migration script, reducing initial project setup time from 15 minutes to 2 minutes and streamlining the migration process for enhanced deployment efficiency.",
+        "Designed and implemented new V3 API endpoints, resolving critical payload issues and improving data throughput by 40%, resulting in enhanced performance and system stability for legacy systems.",
       ],
     },
     {
@@ -59,10 +60,10 @@ Experience.constants = {
       date: "September 2023 - August 2024",
       location: "Mississauga - Canada",
       descriptions: [
-        "Contributed to the development of 15+ components for an internal UI library, including a widely adopted Rich Text Editor (RTE), enhancing user experience across all company products.",
-        "Developed a service that updates table schema and data in real-time, with the capability to export the modified data into Excel sheets, streamlining data analysis and reporting for 1,000+ subcontractors.",
         "Collaborated on the modernization of the legacy Request for Information (RFI) module, implementing new API endpoints that reduced system latency by 20% within a year.",
         "Integrated an interactive Gantt Chart within the subcontractor communication portal UI, enabling 1,000+ subcontractors to effectively visualize and manage project deadlines.",
+        "Developed a service that updates table schema and data in real-time, with the capability to export the modified data into Excel sheets, streamlining data analysis and reporting for 1,000+ subcontractors.",        
+        "Contributed to the development of 15+ components for an internal UI library, including a widely adopted Rich Text Editor (RTE), enhancing user experience across all company products.",
       ],
     },
   ],
