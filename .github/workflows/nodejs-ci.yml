@@ -40,7 +40,7 @@ jobs:
       # Step 6: Deploy the 'dist' folder to the S3 bucket
       - name: Deploy to S3
         run: |
-          aws s3 sync dist/ s3://arashghafoori-portfolio.com --delete
+          aws s3 sync build/ s3://arashghafoori-portfolio.com --delete
 
       # Step 7: Invalidate CloudFront Cache
       - name: Invalidate CloudFront Cache
