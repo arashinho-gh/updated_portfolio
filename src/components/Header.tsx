@@ -35,7 +35,7 @@ const Header = () => {
 Header.constants = {
   baseClassName: "header",
   description:
-    "I'm a dedicated and enthusiastic final-year Software Engineering student at McMaster University. My journey in the tech world has been a thrilling ride, enriching my skills across different areas like web development and data sciences. My technical toolkit includes a wide range of programming languages and frameworks, with proficiency in both front-end and back-end development. This diverse expertise enables me to tackle complex challenges and build seamless, efficient solutions.\n\nBelow, you’ll find highlights of my achievements that showcase my capabilities and reflect my commitment to excellence in the field of software engineering.",
+    "I’m a Software Engineering graduate from McMaster University with experience working on production systems at companies like Dayforce and EllisDon. I’ve spent my time building and maintaining backend services, improving existing systems, and contributing to features that are used by real teams and users.\nI’ve worked across different stacks and environments, from modern web applications to internal tools and backend services, using technologies like C#, Java, TypeScript, SQL, and cloud services. I enjoy understanding how systems work end-to-end, fixing things that aren’t quite right, and writing code that’s clear, reliable, and easy for others to work with.\n\nBelow are a few highlights from my experience and projects that reflect how I approach software engineering.",
 };
 
 export default Header;
