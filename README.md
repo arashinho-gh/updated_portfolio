@@ -1,46 +1,78 @@
-# Getting Started with Create React App
+# arashghafoori — Personal Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains a React-based personal portfolio website built with Create React App. It includes a production build output in the `build/` folder and a GitHub Actions workflow that builds and deploys the site to an S3 bucket.
 
-## Available Scripts
+**Live deploy target:** `s3://arashghafoori-portfolio.com`
 
-In the project directory, you can run:
+Quick reference
 
-### `npm start`
+- **Local development:**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+	```bash
+	npm install
+	npm start
+	```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+	Opens the dev server on `http://localhost:3000`.
 
-### `npm test`
+- **Run tests:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+	```bash
+	npm test
+	```
 
-### `npm run build`
+- **Create production build:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+	```bash
+	npm run build
+	```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+	The optimized static site will be output to the `build/` directory.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+CI / Deployment
 
-### `npm run eject`
+- This repo includes a GitHub Actions workflow (`.github/workflows/nodejs-ci.yml`) that builds the project and deploys the `build/` output to the S3 bucket `s3://arashghafoori-portfolio.com` on pushes to `master`.
+- The workflow expects the following repository secrets to be set (Repository → Settings → Secrets → Actions):
+	- `AWS_ACCESS_KEY_ID` — Access key for an IAM user with permissions to write to the S3 bucket.
+	- `AWS_SECRET_ACCESS_KEY` — Secret key for the IAM user.
+	- `CLOUDFRONT_DISTRIBUTION_ID` — (optional) CloudFront distribution ID to invalidate after deploy.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Recommended IAM policy for the deploy user (least-privilege example):
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```json
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Action": [
+				"s3:PutObject",
+				"s3:PutObjectAcl",
+				"s3:DeleteObject",
+				"s3:ListBucket"
+			],
+			"Resource": [
+				"arn:aws:s3:::arashghafoori-portfolio.com",
+				"arn:aws:s3:::arashghafoori-portfolio.com/*"
+			]
+		},
+		{
+			"Effect": "Allow",
+			"Action": [
+				"cloudfront:CreateInvalidation"
+			],
+			"Resource": "*"
+		}
+	]
+}
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Notes
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- The workflow uses `node-version: '22'` — change this in the workflow if you prefer a different Node version (e.g., `20.x`).
+- If your S3 bucket is in a different AWS region, update the `aws-region` value in the workflow.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+If you want, I can also:
+- Split CI (tests) and deploy workflows into separate files.
+- Add a pre-deploy check that ensures `build/` exists before syncing.
+- Prepare a branch and PR with these changes.
