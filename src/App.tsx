@@ -1,28 +1,29 @@
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 import NavBar from "./components/NavBar";
 import Header from "./components/Header";
+import Skills from "./components/Skills";
 import Experience from "./components/Experience";
+import GroupProjects from "./components/GroupProjects";
 import Projects from "./components/Projects";
 import Contacts from "./components/Contacts";
 import "./main.scss";
-import GroupProjects from "./components/GroupProjects";
 
 function App() {
   const [theme, setTheme] = useState("dark");
 
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
+
   const changeTheme = () => {
-    console.log("===test===");
-    if (theme === "light") {
-      setTheme("dark");
-      return;
-    }
-    setTheme("light");
+    setTheme((t) => (t === "light" ? "dark" : "light"));
   };
 
   return (
-    <div className="App" data-theme={theme}>
+    <div className="App">
       <NavBar changeTheme={changeTheme} theme={theme} />
       <Header />
+      <Skills />
       <Experience />
       <GroupProjects />
       <Projects />
