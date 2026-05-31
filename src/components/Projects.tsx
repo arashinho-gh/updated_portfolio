@@ -14,6 +14,14 @@ interface Project {
 
 const PROJECTS: Project[] = [
   {
+    title: "Course Companion",
+    description:
+      "Co-founded a university-exclusive AI study platform offering 24/7 course-specific support. Students chat with an LLM grounded on course materials via Pinecone vector search, while professors manage and customize model training for their courses.",
+    github_url: "https://github.com/arashinho-gh/course-companion",
+    img: "2",
+    skills: ["TypeScript", "Java", "React", "LangChain", "Pinecone", "Docker", "AWS"],
+  },
+  {
     title: "MISA Club Website",
     description:
       "Singlehandedly designed and built a multipage club website for the McMaster Iranian Student Association — featuring a real-time newsletter subscription service for 200 active members and 500+ alumni.",

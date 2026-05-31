@@ -3,7 +3,6 @@ import NavBar from "./components/NavBar";
 import Header from "./components/Header";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
-import GroupProjects from "./components/GroupProjects";
 import Projects from "./components/Projects";
 import Contacts from "./components/Contacts";
 import "./main.scss";
@@ -25,8 +24,7 @@ function App() {
       <Header />
       <Skills />
       <Experience />
-      <GroupProjects />
-      <Projects />
+<Projects />
       <Contacts />
     </div>
   );
