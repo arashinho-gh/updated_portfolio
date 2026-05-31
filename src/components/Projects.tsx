@@ -18,7 +18,7 @@ const PROJECTS: Project[] = [
     description:
       "Co-founded a university-exclusive AI study platform offering 24/7 course-specific support. Students chat with an LLM grounded on course materials via Pinecone vector search, while professors manage and customize model training for their courses.",
     github_url: "https://github.com/arashinho-gh/course-companion",
-    img: "2",
+    img: "cc",
     skills: ["TypeScript", "Java", "React", "LangChain", "Pinecone", "Docker", "AWS"],
   },
   {
@@ -28,14 +28,6 @@ const PROJECTS: Project[] = [
     link: "https://mcmasteriranians.com/",
     img: "7",
     skills: ["TypeScript", "React", "AWS Lambda", "SES", "AWS"],
-  },
-  {
-    title: "Personal Portfolio",
-    description:
-      "Modern personal portfolio deployed on AWS. Built with React and TypeScript, served via S3 with CI/CD through GitHub Actions.",
-    github_url: "https://github.com/arashinho-gh/updated_portfolio",
-    img: "1",
-    skills: ["TypeScript", "React", "AWS", "SCSS"],
   },
   {
     title: "Carpooling Mobile App",
